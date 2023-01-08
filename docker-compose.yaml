@@ -5,5 +5,5 @@ services:
     volumes:
       - ./Input:/Input
       - ./Output:/Output
-    command: ["--network=none"]
+
     
