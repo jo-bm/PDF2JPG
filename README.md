@@ -7,13 +7,7 @@ This repository contains a script and Docker configuration files that convert a 
 
 ## Usage
 1. Place the PDF file that you want to convert in the Input folder.
-2. Build the Docker image:
-
-```bash
-docker-compose build 
-```
-
-3. Run the Docker image:
+2. Build the Docker image and run it:
 
 ```bash
 docker-compose up
