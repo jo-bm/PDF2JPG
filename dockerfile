@@ -8,7 +8,6 @@ RUN mkdir /app
 
 # Copy the script to the app directory
 COPY pdf2img.sh /app/pdf2img.sh
-COPY ./Input /Input
 
 # Set the working directory to the app directory
 WORKDIR /app

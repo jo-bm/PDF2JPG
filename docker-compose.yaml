@@ -3,6 +3,7 @@ services:
   script:
     build: .
     volumes:
+      - ./Input:/Input
       - ./Output:/Output
-
+    command: ["--network=none"]
     
