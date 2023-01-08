@@ -1,21 +1,22 @@
-PDF to JPEG Converter
+# PDF to JPEG Converter
 
 This repository contains a script and Docker configuration files that convert a PDF file into high quality JPEG images.
-Prerequisites
 
-    Docker
+## Prerequisites
+- Docker
 
-Usage
+## Usage
+1. Place the PDF file that you want to convert in the Input folder.
+2. Build the Docker image:
 
-    1. Place the PDF file that you want to convert in the Input folder.
-    2. Build the Docker image:
-
-docker-compose build
+```bash
+docker-compose build 
+```
 
     3. Run the Docker image:
-
+```bash
 docker-compose up
-
+```
 The script will automatically take the PDF file from the Input folder, convert it into images, and save the images to the Output folder. The Input and Output folders are mapped to the corresponding folders in the container, so you can access the input and output files from the host file system.
 Customization
 
