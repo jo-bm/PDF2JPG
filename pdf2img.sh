@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt-get update
 
 # Make sure poppler-utils is installed
 command -v pdftoppm >/dev/null 2>&1 || { echo >&2 "The poppler-utils package is required to run this script. Please install it and try again. Aborting."; exit 1; }

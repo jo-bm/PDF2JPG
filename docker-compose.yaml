@@ -5,5 +5,8 @@ services:
     volumes:
       - ./Input:/Input
       - ./Output:/Output
+      
+    network_mode: none
 
+    
     
