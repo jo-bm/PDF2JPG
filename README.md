@@ -1,6 +1,7 @@
 # PDF to JPEG Converter
 
 This repository contains a script and Docker configuration files that convert a PDF file into high quality JPEG images.
+It is designed to run inside a Docker container without any network to isolate the process from the host system and protect against potential malware that may be present in the PDF file.
 
 ## Prerequisites
 - [Docker](https://www.docker.com/)
