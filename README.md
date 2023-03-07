@@ -1,6 +1,7 @@
 # PDF to JPEG Converter
 
 This repository contains a script and Docker configuration files that convert a PDF file into high quality JPEG images.
+and build a new PDF out of them. (additionly there is another scrript named intoJPG.sh that will convert it into JPGs folder insted of a completly new pdf. if you want so, change it in the dockerfile)
 It is designed to run inside a Docker container without any network in order to isolate the process from the host system and protect against potential malware that may be present in the PDF file.
 
 Malicious PDF files can be a security concern because they can contain JavaScript code that can be executed when the PDF is opened, potentially allowing attackers to perform a variety of actions such as downloading additional malware, stealing sensitive information, or taking control of the user's device. Running the script inside a Docker container without any network access can help to mitigate these risks by isolating the process and preventing the PDF from communicating with the outside world. However, it is important to keep in mind that the container will not completely eliminate the risk of malware, as the PDF file may still be able to exploit vulnerabilities in the software that is running inside the container.

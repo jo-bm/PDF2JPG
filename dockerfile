@@ -6,6 +6,9 @@ RUN apt-get update && apt-get install -y poppler-utils
 # Create the script directory
 RUN mkdir /app
 
+# img2pdf
+RUN apt install -y img2pdf
+
 # Copy the script to the app directory
 COPY pdf2img.sh /app/pdf2img.sh
 
